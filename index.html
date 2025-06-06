@@ -3,24 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Noticias del Reino Animal</title>
+  <title>Noticias salvajes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="hero">
     <div class="hero-text">
-      <h1>Noticias del Reino Animal</h1>
+      <h1>Noticias salvajes</h1>
       <p>Explora el fascinante mundo de la fauna salvaje</p>
     </div>
+
+    <!-- === Login / Registro simple con opciones sociales === -->
+<section id="login-simple" class="fade-in">
+  <div class="login-container">
+    <div class="tabs">
+      <button id="tab-login" class="tab active">Iniciar Sesión</button>
+      <button id="tab-register" class="tab">Crear Cuenta</button>
+    </div>
+
+    <!-- FORMULARIO LOGIN -->
+    <form id="loginForm" class="form active">
+      <input type="text" id="loginUsername" placeholder="Usuario" required />
+      <input type="password" id="loginPassword" placeholder="Contraseña" required />
+      <button type="submit" class="btn-primary">Entrar</button>
+
+      <div class="social-buttons">
+        <button type="button" id="googleLogin" class="btn-social google">Ingresar con Google</button>
+        <button type="button" id="facebookLogin" class="btn-social facebook">Ingresar con Facebook</button>
+      </div>
+
+      <div id="loginMessage" class="message"></div>
+    </form>
+
+    <!-- FORMULARIO REGISTRO -->
+    <form id="registerForm" class="form">
+      <input type="text" id="regUsername" placeholder="Nuevo usuario" required />
+      <input type="password" id="regPassword" placeholder="Nueva contraseña" required />
+      <button type="submit" class="btn-primary">Crear Cuenta</button>
+
+      <div class="social-buttons">
+        <button type="button" id="googleRegister" class="btn-social google">Registrar con Google</button>
+        <button type="button" id="facebookRegister" class="btn-social facebook">Registrar con Facebook</button>
+      </div>
+
+      <div id="registerMessage" class="message"></div>
+    </form>
+  </div>
+</section>
+<!-- ============================================ -->
   </header>
 
-  <nav>
-    <a href="#mamiferos">Mamíferos</a>
-    <a href="#aves">Aves</a>
-    <a href="#reptiles">Reptiles</a>
-    <a href="#acuaticos">Acuáticos</a>
-    <a href="blog.html">Preguntas &amp; Respuestas</a>
-  </nav>
+
+<nav>
+  <a href="#mamiferos">Mamíferos</a>
+  <a href="#aves">Aves</a>
+  <a href="#reptiles">Reptiles</a>
+  <a href="#acuaticos">Acuáticos</a>
+  <a href="tienda.html">Tienda Solidaria</a>
+  <a href="blog.html">Preguntas &amp; Respuestas</a>
+  <a href="javascript:void(0)" id="cart-icon">
+    🛒 <span id="cart-count">0</span>
+  </a>
+</nav>
+
+ 
 
   <!-- MAMÍFEROS -->
   <section id="mamiferos">
@@ -432,16 +479,28 @@
 </section>
 
 
- 
-
-
- 
-
 <footer>
-  <p>© 2025 Noticias del Reino Animal. Todos los derechos reservados. Creado por Christian Jaramillo Rotavisky.</p>
+  <p>© 2025 Noticias salvajes. Todos los derechos reservados. Creado por Christian Jaramillo Rotavisky.</p>
 </footer>
 
+<!-- === Panel Deslizable de Carrito (localStorage + cookie) === -->
+<div id="cart-panel" class="cart-panel">
+  <div class="cart-header">
+    <h2>Tu Carrito</h2>
+    <button id="cart-close" class="cart-close">✕</button>
+  </div>
+  <div id="cart-items" class="cart-items">
+    <!-- Aquí se ponen los ítems del carrito -->
+  </div>
+  <div class="cart-footer">
+    <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-btn" class="btn-primary checkout">Pagar</button>
+  </div>
+</div>
+<!-- ============================================== -->
+ 
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+

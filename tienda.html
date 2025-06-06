@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Solidaria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navegación principal -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="blog.html">Preguntas &amp; Respuestas</a>
+    <a href="javascript:void(0)" id="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </a>
+  </nav>
+
+  <!-- Sección Tienda Solidaria -->
+  <section id="tienda">
+    <h2>Tienda Solidaria</h2>
+    <div class="product-grid">
+
+      <!-- Artículo 1 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/camiseta elefante.jpeg" alt="Camiseta Elefante de Kenia" />
+        <div class="product-content">
+          <h3>Camiseta “Elefantes Unidos”</h3>
+          <p>100% algodón con ilustración de elefante. Parte de lo recaudado se donará a proyectos de conservación de elefantes.</p>
+          <p class="price">$18.00 €</p>
+          <button class="btn-add-cart" data-id="articulo1">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 2 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/taza de tigre.jpg" alt="Taza “Salva a los Tigres”" />
+        <div class="product-content">
+          <h3>Taza “Salva a los Tigres”</h3>
+          <p>Taza de cerámica con diseño de tigre. Los fondos apoyan refugios de tigres en Asia.</p>
+          <p class="price">$12.50 €</p>
+          <button class="btn-add-cart" data-id="articulo2">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 3 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/gorra de oceano.jpg" alt="Gorra “Protege los Océanos”" />
+        <div class="product-content">
+          <h3>Gorra “Protege los Océanos”</h3>
+          <p>Gorra de tela reciclada con mensaje de conservación marina. Parte de la venta apoya limpieza de playas.</p>
+          <p class="price">$15.00 €</p>
+          <button class="btn-add-cart" data-id="articulo3">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 4 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/poster de aves.webp" alt="Póster “Aves Libres”" />
+        <div class="product-content">
+          <h3>Póster “Aves Libres”</h3>
+          <p>Póster artístico de aves en vuelo. Ideal para decorar y concienciar sobre la protección de aves migratorias.</p>
+          <p class="price">$8.00 €</p>
+          <button class="btn-add-cart" data-id="articulo4">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 5 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/bolsa mensaje.jpg" alt="Bolsa “Adopta un Árbol”" />
+        <div class="product-content">
+          <h3>Bolsa “Adopta un Árbol”</h3>
+          <p>Bolsa reutilizable de algodón con mensaje ecológico. Con cada compra se planta un árbol.</p>
+          <p class="price">$10.00 €</p>
+          <button class="btn-add-cart" data-id="articulo5">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 6 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/llavero de gato.jpg" alt="Llavero “Salva la Fauna”" />
+        <div class="product-content">
+          <h3>Llavero “Salva la Fauna”</h3>
+          <p>Llavero de metal con forma de huella animal. Los ingresos apoyan rescates de fauna silvestre.</p>
+          <p class="price">$5.00 €</p>
+          <button class="btn-add-cart" data-id="articulo6">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 7 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/libreta ecologica.webp" alt="Libreta “Bosque Vivo”" />
+        <div class="product-content">
+          <h3>Libreta “Bosque Vivo”</h3>
+          <p>Libreta ecológica hecha con papel reciclado. Parte de la recaudación se destina a reforestación.</p>
+          <p class="price">$9.00 €</p>
+          <button class="btn-add-cart" data-id="articulo7">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 8 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/calcetines oso.jpg" alt="Calcetines “Amigos del Oso Polar”" />
+        <div class="product-content">
+          <h3>Calcetines “Amigos del Oso Polar”</h3>
+          <p>Calcetines de algodón ilustrados con oso polar. Ayuda con tu compra a refugios en el Ártico.</p>
+          <p class="price">$7.50 €</p>
+          <button class="btn-add-cart" data-id="articulo8">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 9 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/pegatina coral.jpg" alt="Pegatina “Salva los Corales”" />
+        <div class="product-content">
+          <h3>Pegatina “Salva los Corales”</h3>
+          <p>Pegatina resistente al agua con diseño de coral. Contribuye con proyectos de restauración de arrecifes.</p>
+          <p class="price">$3.00 €</p>
+          <button class="btn-add-cart" data-id="articulo9">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Artículo 10 -->
+      <div class="product-card fade-in">
+        <img src="imagenes/botella.jpg" alt="Botella “Agua Limpia para Todos”" />
+        <div class="product-content">
+          <h3>Botella “Agua Limpia para Todos”</h3>
+          <p>Botella reutilizable de acero inoxidable. Parte de los ingresos apoyan proyectos de agua potable en comunidades.</p>
+          <p class="price">$22.00 €</p>
+          <button class="btn-add-cart" data-id="articulo10">Añadir al carrito</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Carrito deslizable -->
+  <div id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+      <h2>Tu Carrito</h2>
+      <button id="cart-close" class="cart-close">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <!-- Aquí se inyectarán los ítems del carrito -->
+    </div>
+    <div class="cart-footer">
+      <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn" class="btn-primary checkout">Pagar</button>
+    </div>
+  </div>
+
+
+<footer>
+  <p>© 2025 Noticias salvajes. Todos los derechos reservados. Creado por Christian Jaramillo Rotavisky.</p>
+</footer>
+
+
+  <!-- Carga del script principal -->
+  <script src="script.js"></script>
+
+</body>
+</html>
